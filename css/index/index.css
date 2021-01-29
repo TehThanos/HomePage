@@ -12,6 +12,12 @@ body {
 	src: URL("fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
+/* https://github.com/source-foundry/Hack/blob/master/LICENSE.md */
+@font-face {
+	font-family: "Hack";
+	src: URL("fonts/Hack-Regular") format("truetype");
+}
+
 .content {
 	position: absolute;
 	top: 20%;
