@@ -1,0 +1,21 @@
+#quick-access {
+	position: relative;
+	margin-top: 25px !important;
+	margin-left: 2px !important;
+}
+
+#quick-access-grid {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+}
+
+.quick-access-grid-item {
+	padding: 25px;
+}
+
+#reddit {
+	font-size: 40px;
+	letter-spacing: -5px;
+	color: white;
+	text-decoration: none;
+}

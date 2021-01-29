@@ -1,0 +1,30 @@
+.search-form {
+	width: 100%;
+}
+
+.search-icon {
+	position: relative;
+	display: block;
+	width: 20px;
+	height: 20px;
+	left: 12px;
+	top: 30px;
+	padding-right: 3px;
+	border-right: 1px black solid;
+	fill: #555;
+	/* background-color: black; */
+}
+
+.search {
+	width: 450px;
+	font-size: 14px;
+	line-height: 40px;
+	border-radius: 25px;
+	padding-left: 43px;
+	font-family: "Montserrat";
+
+	font-weight: 100;
+	box-shadow: none;
+	border: 0px;
+	outline: none;
+}

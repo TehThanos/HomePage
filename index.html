@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/index/index.css" />
+		<link rel="stylesheet" href="css/index/quick_access.css" />
+		<link rel="stylesheet" href="css/index/search.css" />
+		<link rel="stylesheet" href="css/index/time.css" />
+		<link rel="stylesheet" href="css/index/utils.css" />
+		<title>Home</title>
+	</head>
+	<body>
+		<!-- All icons are from https://material.io/ and under https://www.apache.org/licenses/LICENSE-2.0.html -->
+		<div class="content">
+			<div id="time" class="center noselect">
+				<div id="clock-display" class="clock" onload="showTime()"></div>
+				<div id="date-display" class="date" onload="showDate()"></div>
+			</div>
+
+			<form
+				action="https://www.google.com/search"
+				class="center search-form"
+				method="get"
+				name="search-form"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					class="search-icon"
+					fill="black"
+					width="18px"
+					height="18px"
+				>
+					<path d="M0 0h24v24H0z" fill="none" />
+					<path
+						d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+					/>
+				</svg>
+
+				<input
+					autocomplete="off"
+					class="form-control search noselect"
+					name="q"
+					placeholder="Search Google"
+					type="text"
+				/>
+			</form>
+
+			<div id="quick-access" class="center noselect">
+				<div id="quick-access-grid">
+					<a
+						href="https://mail.google.com/"
+						class="quick-access-grid-item"
+						title="Gmail"
+					>
+						<img src="icons/mail.svg" width="50" />
+					</a>
+
+					<a
+						href="https://github.com/"
+						class="quick-access-grid-item"
+						title="Github"
+					>
+						<img src="icons/GitHub.png" width="50" />
+					</a>
+					<a
+						href="https://drive.google.com/"
+						class="quick-access-grid-item"
+						title="Drive"
+					>
+						<img src="icons/cloud.svg" width="50" />
+					</a>
+					<a
+						href="https://reddit.com/"
+						class="quick-access-grid-item"
+						title="Reddit"
+						id="reddit"
+					>
+						<span>r/</span>
+					</a>
+					<a
+						href="https://youtube.com/"
+						class="quick-access-grid-item"
+						title="Youtube"
+					>
+						<img src="icons/play_arrow.svg" width="50" />
+					</a>
+					<a
+						href="https://www.twitch.tv/"
+						class="quick-access-grid-item"
+						title="Twitch"
+					>
+						<img src="icons/TwitchGlitchWhite.svg" width="45" />
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="clock.js"></script>
+		<script src="date.js"></script>
+	</body>
+</html>
